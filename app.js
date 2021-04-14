@@ -1,12 +1,12 @@
 
-var Answer = prompt (' What is your name?');
-  alert ('Welcome to my page '+ Answer);
+var userName = prompt (' What is your name?');
+  alert ('Welcome to my page '+ userName );
 
 
 // ANOTHER ALERT
 
-alert('Hello from alert');
-var Age = prompt ('How old are you?');
+
+var Age = prompt ('How old are you? ' + userName);
 
 if ( Age >= 18 )
 {
