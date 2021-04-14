@@ -1,14 +1,7 @@
 
-var Answer = prompt (' Are You Human?  Y/N ?');
-if ( Answer == 'Y')
-{
-  alert ('Welcome to my page');
-}
+var Answer = prompt (' What is your name?');
+  alert ('Welcome to my page '+ Answer);
 
-else if ( Answer == 'N' )
-{
-alert ("Sorry, but you can't reach this page")
-}
 
 // ANOTHER ALERT
 
