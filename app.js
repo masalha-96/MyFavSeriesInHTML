@@ -107,7 +107,8 @@ var numOfImages = prompt('Please enter the number of times you want to repeat th
 
 for (var i = 0; i < numOfImages; i++) {
   //img num
-  document.write('<h3> Image No. ' + (i+1) + '</h3>'  );
+  document.write('<h3> Image No. ' + (i+1) + ' of ' + charName + ' </h3>'    );
+  //img of userChoose
   document.write(userChoose);
 }
 
