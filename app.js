@@ -1,5 +1,10 @@
 
+
 /*
+
+var userName = prompt (' What is your name?');
+  alert ('Welcome to my page '+ userName );
+
 
 Day 003 
 
@@ -8,6 +13,7 @@ var userName = prompt (' What is your name?');
 
 
 // ANOTHER ALERT
+
 var Age = prompt ('How old are you? ' + userName);
 
 if ( Age >= 18 )
@@ -98,6 +104,8 @@ else if (charName == 'Rio') {
 var numOfImages = prompt('Please enter the number of times you want to repeat the image of (' + charName + ')');
 
 for (var i = 0; i < numOfImages; i++) {
+  //img num
+  document.write('<h3> Image No. ' + (i+1) + '</h3>'  );
   document.write(userChoose);
 }
 
