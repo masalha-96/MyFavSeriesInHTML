@@ -1,6 +1,6 @@
 
-
 /*
+
 
 var userName = prompt (' What is your name?');
   alert ('Welcome to my page '+ userName );
@@ -10,6 +10,8 @@ Day 003
 
 var userName = prompt (' What is your name?');
   alert ('Welcome to my page '+ userName );
+
+
 
 
 // ANOTHER ALERT
