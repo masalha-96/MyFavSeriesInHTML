@@ -1,5 +1,10 @@
 
+<<<<<<< HEAD
 /*
+=======
+var userName = prompt (' What is your name?');
+  alert ('Welcome to my page '+ userName );
+>>>>>>> 3e01ae2b108b2e3c7e95fe463e3d03bdbeb1c33e
 
 Day 003 
 
@@ -7,7 +12,11 @@ var userName = prompt (' What is your name?');
   alert ('Welcome to my page '+ userName );
 
 
+<<<<<<< HEAD
 // ANOTHER ALERT
+=======
+
+>>>>>>> 3e01ae2b108b2e3c7e95fe463e3d03bdbeb1c33e
 var Age = prompt ('How old are you? ' + userName);
 
 if ( Age >= 18 )
