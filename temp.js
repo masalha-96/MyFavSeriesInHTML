@@ -74,3 +74,4 @@ console.log('2^2 =',2 ** 2);
 // concatianation I will use it to add 2 strings together using 
 console.log('hello'+' '+'Sohaib');
 
+//console.log('Bara\'ah');
