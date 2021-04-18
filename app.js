@@ -61,54 +61,79 @@ else if ( urTime >= 0 )
 
 //Day004
 
+
 var userChoose;
+var charName;
 
-var charName = prompt('Hello, Please Enter The name of your best char in LCDP Series');
+// fun expression
+var getInfo = function () {
 
-while (charName !== 'Berlin' && charName !== 'Rio' && charName !== 'Tokyo' && charName !== 'Nairobi' && charName !== 'Denver') {
-  alert('Wrong Input, Please choose one of those names Berlin, Rio, Tokyo, Nairobi, or Denver :)    ');
-  var charName = prompt('Hello, Please Enter The name of your best char in LCDP Series AGAIN.')
+  charName = prompt('Hello, Please Enter The name of your best char in LCDP Series');
+
+  while (charName !== 'Berlin' && charName !== 'Rio' && charName !== 'Tokyo' && charName !== 'Nairobi' && charName !== 'Denver') {
+    alert('Wrong Input, Please choose one of those names Berlin, Rio, Tokyo, Nairobi, or Denver :)    ');
+    charName = prompt('Hello, Please Enter The name of your best char in LCDP Series AGAIN.')
+
+  }
 
 }
 
+//calling my fun
+getInfo();
 
-if (charName == 'Berlin') {
-  userChoose = '<img src="https://www.mobtada.com/resize?src=uploads/images/2020/03/15840293210.jpg&w=750&h=450&zc=0&q=70">';
-  //document.write(userChoose);
+
+// declaring another fun in another way fun. decleration
+
+function repeatImages() {
+
+  // fun start
+  if (charName == 'Berlin') {
+    userChoose = '<img src="https://www.mobtada.com/resize?src=uploads/images/2020/03/15840293210.jpg&w=750&h=450&zc=0&q=70">';
+    //document.write(userChoose);
+  }
+
+  if (charName == 'Tokyo') {
+    userChoose = '<img src="https://i.redd.it/yiyltjqtmhs41.jpg">';
+    //document.write(userChoose);
+  }
+
+  else if (charName == 'Nairobi') {
+    userChoose = '<img src="https://i.ytimg.com/vi/5pocgUmvAtA/maxresdefault.jpg" >';
+
+    //document.write(userChoose);
+  }
+
+  else if (charName == 'Denver') {
+    userChoose = '<img src="https://i.pinimg.com/originals/6c/9e/88/6c9e88c147469ea86d1f7e555a350a16.jpg" >';
+
+    //document.write(userChoose);
+  }
+
+  else if (charName == 'Rio') {
+    userChoose = '<img src="https://static.displate.com/280x392/displate/2020-03-25/2605295eb509695c5164e3e778d13e40_200feb90004fd8fd8b98f383c1e9871e.jpg" >';
+    //document.write(userChoose);
+  }
+
+
+
+
+
+  var numOfImages = prompt('Please enter the number of times you want to repeat the image of (' + charName + ')');
+
+  for (var i = 0; i < numOfImages; i++) {
+    //img num
+    document.write('<h3> Image No. ' + (i + 1) + ' of ' + charName + ' </h3>');
+    //img of userChoose
+    document.write(userChoose);
+  }
+
+  // The total num of images
+  //document.write('<h3> The Total No. Images = ' + numOfImages + ' </h3>');
+
+  //fun end
 }
 
-if (charName == 'Tokyo') {
-  userChoose = '<img src="https://i.redd.it/yiyltjqtmhs41.jpg">';
-  //document.write(userChoose);
-}
+// calling repeatImages function
+repeatImages();
 
-else if (charName == 'Nairobi') {
-  userChoose = '<img src="https://i.ytimg.com/vi/5pocgUmvAtA/maxresdefault.jpg" >';
-
-  //document.write(userChoose);
-}
-
-else if (charName == 'Denver') {
-  userChoose = '<img src="https://i.pinimg.com/originals/6c/9e/88/6c9e88c147469ea86d1f7e555a350a16.jpg" >';
-
-  //document.write(userChoose);
-}
-
-else if (charName == 'Rio') {
-  userChoose = '<img src="https://static.displate.com/280x392/displate/2020-03-25/2605295eb509695c5164e3e778d13e40_200feb90004fd8fd8b98f383c1e9871e.jpg" >';
-  //document.write(userChoose);
-}
-
-
-
-
-
-var numOfImages = prompt('Please enter the number of times you want to repeat the image of (' + charName + ')');
-
-for (var i = 0; i < numOfImages; i++) {
-  //img num
-  document.write('<h3> Image No. ' + (i+1) + ' of ' + charName + ' </h3>'    );
-  //img of userChoose
-  document.write(userChoose);
-}
 
